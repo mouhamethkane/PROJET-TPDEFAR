@@ -31,7 +31,7 @@ move_uploaded_file($_FILES["img"]["tmp_name"], $targetFilePath);
 //connexion au serveur de BD de la base
 $conn = mysqli_connect('localhost', 'root', '', 'TPDEFAR');
 //creation de la requete SQL pour inserer les donnes
-$req="INSERT INTO apprenant(cni, prenom, nom, mail, telephone,img)VALUES('$cni', '$prenom', '$nom', '$mail', '$telephone','$imgname')";
+$req="INSERT INTO information(cni, prenom, nom, mail, telephone,img)VALUES('$cni', '$prenom', '$nom', '$mail', '$telephone','$imgname')";
 	echo $req. '<br>';
 //execution de la requete
 $resultat=mysqli_query($conn,$req)or die(mysqli_error($conn));
