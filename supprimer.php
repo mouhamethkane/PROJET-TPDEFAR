@@ -14,7 +14,7 @@ $id =$_GET['var'];
 //Connexion au serveur de BD
 $conn = mysqli_connect('localhost', 'root', '', 'TPDEFAR');
 //Creation de la requete de suppression 
-$req ="DELETE FROM apprenant WHERE cni =$id";
+$req ="DELETE FROM information WHERE cni =$id";
 //echo "<br>$req";
 $resultat = mysqli_query($conn, $req)or die(mysqli_error($conn));
 if($resultat){

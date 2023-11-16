@@ -8,7 +8,7 @@ if(mysqli_connect_errno()){
 else{
 		echo 'connexion reussie! <br>';
 		//requete SQL
-		$requete = "select * from apprenant";
+		$requete = "select * from information";
 		//execution de la requete SQL
 		$resultats = mysqli_query($conn, $requete) or die(mysqli_error());
 

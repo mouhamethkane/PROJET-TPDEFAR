@@ -15,7 +15,7 @@ $id =$_GET['var'];
 
 //connexion a la BD et execution  de la requete de mise a jour
 $conn = mysqli_connect('localhost', 'root', '', 'TPDEFAR');
-$requete = "SELECT * FROM apprenant WHERE cni =$id";
+$requete = "SELECT * FROM information WHERE cni =$id";
 $resultat=mysqli_query($conn,$requete)or die(mysqli_error($conn));
 $ligne=mysqli_fetch_assoc($resultat);
 

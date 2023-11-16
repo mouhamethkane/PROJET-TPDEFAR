@@ -19,7 +19,7 @@ else{//debut bloc des traitements des donnees sur la BD
 		//echo 'connexion reussie! <br>';
 
 		//requete SQL
-		$requete = "select * from apprenant";
+		$requete = "select * from information";
 		//execution de la requete SQL
 		$resultats = mysqli_query($conn, $requete) or die(mysqli_error());
 

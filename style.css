@@ -20,6 +20,13 @@ h1{
 table a{
     text-decoration: none;
     color: rgb(42, 23, 216);
+    cursor: pointer;
+    transition: 0.5;
+}
+.table a:hover{
+    background-color: yellow;
+    color: #fff;
+
 }
 /* **************************************show******************************* */
 .jobphp img{
@@ -47,6 +54,17 @@ table a{
     color: aqua;
     font-size: 20px;
     margin-left: 50px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 45%;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.jobphp a:hover{
+    background-color: yellow;
+    color: #000;
+
 }
 /* ***************************************formulaire************************************* */
 .form-group{
@@ -61,6 +79,27 @@ table a{
 .form-group input{
     width: 50%;
     height: 50px;
+}
+input{
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+}
+input[type= "submit"]{
+    cursor: pointer;
+    transition: 0.5s;
+}
+input[type= "submit"]:hover{
+    background-color: aqua;
+    color: #fff;
+}
+input[type= "reset"]{
+    cursor: pointer;
+    transition: 0.5s;
+}
+input[type= "reset"]:hover{
+    background-color: red;
+    color: #fff;
 }
 .form-group form h1{
     text-align: center;
@@ -78,6 +117,12 @@ table a{
     color: aqua;
     font-size: 40px;
     border: 3px solid #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.suprime a:hover{
+    background-color: red;
+    color: #fff;
 }
 /* *************************************form-modifier************************************* */
 .modifier form{
@@ -104,6 +149,11 @@ table a{
     font-size: 40px;
     border: 3px solid #fff;
     width: 305px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.modifier1 a:hover{
+    color: yellow;
 }
 /* ****************************ajouter*************************************************** */
 .ajouter {
@@ -118,7 +168,14 @@ table a{
     color: aqua;
     font-size: 40px;
     border: 3px solid #fff;
-    width: 305px;  
+    width: 305px;
+    cursor: pointer;
+    transition: 0.5s;  
+}
+.ajouter a:hover{
+    background-color: yellow;
+    color: #fff;
+
 }
 
 

@@ -14,7 +14,7 @@
 $id =$_GET['var'];
 //connexiona la base et recuperation des donnees
 $conn = mysqli_connect('localhost', 'root', '', 'TPDEFAR');
-$requete = "SELECT * FROM apprenant WHERE cni =$id";
+$requete = "SELECT * FROM information WHERE cni =$id";
 $resultat=mysqli_query($conn,$requete)or die(mysqli_error($conn));
 $ligne=mysqli_fetch_assoc($resultat);
 ?>
